@@ -1,9 +1,9 @@
 package classifier
 
 import (
+	"bitmagnet-io/bitmagnet/internal/model"
 	"errors"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
 )
 
 type HasJsonSchema interface {

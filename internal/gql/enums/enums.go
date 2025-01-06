@@ -1,8 +1,8 @@
 package enums
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/database/search"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/database/search"
+	"bitmagnet-io/bitmagnet/internal/model"
 )
 
 type enum struct {

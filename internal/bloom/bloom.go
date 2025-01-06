@@ -1,8 +1,8 @@
 package bloom
 
 import (
+	"bitmagnet-io/bitmagnet/internal/protocol/dht"
 	"encoding/binary"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht"
 	"github.com/bits-and-blooms/bloom/v3"
 )
 

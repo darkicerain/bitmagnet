@@ -1,12 +1,12 @@
 package responder
 
 import (
+	"bitmagnet-io/bitmagnet/internal/protocol"
+	"bitmagnet-io/bitmagnet/internal/protocol/dht"
+	"bitmagnet-io/bitmagnet/internal/protocol/dht/ktable"
 	"context"
 	"crypto/md5"
 	"encoding/hex"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht/ktable"
 	"net/netip"
 )
 

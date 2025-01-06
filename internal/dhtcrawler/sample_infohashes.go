@@ -1,9 +1,9 @@
 package dhtcrawler
 
 import (
+	"bitmagnet-io/bitmagnet/internal/protocol/dht/ktable"
 	"context"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht/ktable"
 	"time"
 )
 

@@ -1,11 +1,11 @@
 package metainfo
 
 import (
+	"bitmagnet-io/bitmagnet/internal/protocol"
 	"errors"
 	"fmt"
 	"github.com/anacrolix/torrent/bencode"
 	mi "github.com/anacrolix/torrent/metainfo"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
 )
 
 func ParseMetaInfoBytes(infoHash protocol.ID, metaInfoBytes []byte) (Info, error) {

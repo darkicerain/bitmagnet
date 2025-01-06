@@ -1,10 +1,10 @@
 package blocking
 
 import (
+	"bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
+	"bitmagnet-io/bitmagnet/internal/database/dao"
+	"bitmagnet-io/bitmagnet/internal/protocol"
 	"context"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/dao"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
 	"go.uber.org/fx"
 	"sync"
 	"time"

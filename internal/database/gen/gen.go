@@ -5,6 +5,7 @@ import (
 	"gorm.io/gen"
 	"gorm.io/gen/field"
 	"gorm.io/gorm"
+	"os"
 	"path"
 	"runtime"
 )
@@ -14,8 +15,8 @@ func BuildGenerator(db *gorm.DB) *gen.Generator {
 	internal := path.Dir(path.Dir(path.Dir(filename)))
 
 	g := gen.NewGenerator(gen.Config{
-		OutPath:       internal + "/database/dao",
-		ModelPkgPath:  internal + "/model",
+		OutPath:       internal + string(os.PathSeparator) + "database" + string(os.PathSeparator) + "dao",
+		ModelPkgPath:  internal + string(os.PathSeparator) + "model",
 		Mode:          gen.WithoutContext | gen.WithDefaultQuery | gen.WithQueryInterface, // generate mode
 		FieldSignable: true,
 	})
@@ -72,6 +73,14 @@ func BuildGenerator(db *gorm.DB) *gen.Generator {
 		infoHashType,
 		infoHashReadOnly,
 		gen.FieldJSONTag("pieces", "-"),
+		createdAtReadOnly,
+	)
+	torrentTorrentDotFile := g.GenerateModelAs(
+		"torrent_torrent_dot_file",
+		"TorrentTorrentDotFile",
+		infoHashType,
+		infoHashReadOnly,
+		gen.FieldJSONTag("binary_file", "-"),
 		createdAtReadOnly,
 	)
 	torrentsTorrentSources := g.GenerateModel(
@@ -159,6 +168,17 @@ func BuildGenerator(db *gorm.DB) *gen.Generator {
 			field.HasOne,
 			"Pieces",
 			torrentPieces,
+			&field.RelateConfig{
+				GORMTag: field.GormTag{
+					"foreignKey": []string{"InfoHash"},
+				},
+				JSONTag: "-",
+			},
+		),
+		gen.FieldRelate(
+			field.HasOne,
+			"Binary",
+			torrentTorrentDotFile,
 			&field.RelateConfig{
 				GORMTag: field.GormTag{
 					"foreignKey": []string{"InfoHash"},
@@ -437,6 +457,7 @@ func BuildGenerator(db *gorm.DB) *gen.Generator {
 		torrentFiles,
 		torrentsTorrentSources,
 		torrentPieces,
+		torrentTorrentDotFile,
 		torrentTags,
 		torrents,
 		metadataSources,

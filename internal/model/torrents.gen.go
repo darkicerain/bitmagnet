@@ -5,9 +5,8 @@
 package model
 
 import (
+	"bitmagnet-io/bitmagnet/internal/protocol"
 	"time"
-
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
 )
 
 const TableNameTorrent = "torrents"
@@ -28,6 +27,7 @@ type Torrent struct {
 	Sources     []TorrentsTorrentSource `gorm:"foreignKey:InfoHash" json:"sources"`
 	Files       []TorrentFile           `gorm:"foreignKey:InfoHash" json:"files"`
 	Pieces      TorrentPieces           `gorm:"foreignKey:InfoHash" json:"-"`
+	Binary      TorrentTorrentDotFile   `gorm:"foreignKey:InfoHash" json:"-"`
 	Tags        []TorrentTag            `gorm:"foreignKey:InfoHash" json:"tags"`
 }
 

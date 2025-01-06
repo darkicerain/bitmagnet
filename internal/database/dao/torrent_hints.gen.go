@@ -16,7 +16,7 @@ import (
 
 	"gorm.io/plugin/dbresolver"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/model"
 )
 
 func newTorrentHint(db *gorm.DB, opts ...gen.DOOption) torrentHint {

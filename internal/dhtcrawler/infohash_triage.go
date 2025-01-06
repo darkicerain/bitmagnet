@@ -1,10 +1,10 @@
 package dhtcrawler
 
 import (
+	"bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/protocol"
 	"context"
 	"database/sql/driver"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
 	"time"
 )
 

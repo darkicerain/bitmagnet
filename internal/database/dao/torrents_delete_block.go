@@ -1,12 +1,12 @@
 package dao
 
 import (
+	"bitmagnet-io/bitmagnet/internal/bloom"
+	"bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/protocol"
 	"context"
 	"database/sql/driver"
 	"errors"
-	"github.com/bitmagnet-io/bitmagnet/internal/bloom"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
 	"gorm.io/gorm"
 )
 

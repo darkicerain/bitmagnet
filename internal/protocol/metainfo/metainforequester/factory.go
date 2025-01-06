@@ -1,8 +1,8 @@
 package metainforequester
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/concurrency"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
+	"bitmagnet-io/bitmagnet/internal/concurrency"
+	"bitmagnet-io/bitmagnet/internal/protocol"
 	"github.com/prometheus/client_golang/prometheus"
 	"go.uber.org/fx"
 	"go.uber.org/zap"

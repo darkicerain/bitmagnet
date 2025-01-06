@@ -1,9 +1,9 @@
 package app
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/app/appfx"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/cli/hooks"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/logging/loggingfx"
+	"bitmagnet-io/bitmagnet/internal/app/appfx"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/cli/hooks"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/logging/loggingfx"
 	"github.com/urfave/cli/v2"
 	"go.uber.org/fx"
 	"go.uber.org/zap"

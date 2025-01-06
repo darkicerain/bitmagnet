@@ -1,10 +1,10 @@
 package classifiercmd
 
 import (
+	"bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
+	"bitmagnet-io/bitmagnet/internal/classifier"
 	"encoding/json"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
-	"github.com/bitmagnet-io/bitmagnet/internal/classifier"
 	"github.com/urfave/cli/v2"
 	"go.uber.org/fx"
 	"gopkg.in/yaml.v3"

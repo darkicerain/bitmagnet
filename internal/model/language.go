@@ -1,11 +1,11 @@
 package model
 
 import (
+	"bitmagnet-io/bitmagnet/internal/keywords"
 	"database/sql/driver"
 	_ "embed"
 	"encoding/json"
 	"errors"
-	"github.com/bitmagnet-io/bitmagnet/internal/keywords"
 	"github.com/facette/natsort"
 	"regexp"
 	"sort"

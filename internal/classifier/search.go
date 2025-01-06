@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/classifier/classification"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/query"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/search"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/classifier/classification"
+	"bitmagnet-io/bitmagnet/internal/database/query"
+	"bitmagnet-io/bitmagnet/internal/database/search"
+	"bitmagnet-io/bitmagnet/internal/model"
 )
 
 type LocalSearch interface {

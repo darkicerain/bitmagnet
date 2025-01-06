@@ -39,5 +39,5 @@ var defaultBootstrapNodes = []string{
 	"dht.transmissionbt.com:6881",
 	"dht.aelitis.com:6881",     // Vuze
 	"router.silotis.us:6881",   // IPv6
-	"dht.libtorrent.org:25401", // @arvidn's
+	"4dht.libtorrent.org:2501", // @arvidn's
 }

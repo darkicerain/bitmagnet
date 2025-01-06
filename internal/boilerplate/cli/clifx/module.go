@@ -1,8 +1,8 @@
 package clifx
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/cli"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/cli/args"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/cli"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/cli/args"
 	"go.uber.org/fx"
 )
 

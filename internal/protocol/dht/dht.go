@@ -1,7 +1,7 @@
 package dht
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
+	"bitmagnet-io/bitmagnet/internal/protocol"
 	"net/netip"
 )
 

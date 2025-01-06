@@ -1,0 +1,12 @@
+log:
+  json: false
+  development: true
+postgres:
+  host: host.docker.internal
+  password: postgres
+tmdb:
+  enabled: false
+dht_crawler:
+  scaling_factor: 50
+processor:
+  concurrency: 20

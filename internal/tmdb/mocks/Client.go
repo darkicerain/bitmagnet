@@ -5,7 +5,7 @@ package tmdb_mocks
 import (
 	context "context"
 
-	tmdb "github.com/bitmagnet-io/bitmagnet/internal/tmdb"
+	tmdb "bitmagnet-io/bitmagnet/internal/tmdb"
 	mock "github.com/stretchr/testify/mock"
 )
 

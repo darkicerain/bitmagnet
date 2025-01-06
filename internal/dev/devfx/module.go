@@ -1,13 +1,13 @@
 package devfx
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/boilerplatefx"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/config/configfx"
-	"github.com/bitmagnet-io/bitmagnet/internal/database"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/migrations"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/postgres"
-	"github.com/bitmagnet-io/bitmagnet/internal/dev/app/cmd/gormcmd"
-	"github.com/bitmagnet-io/bitmagnet/internal/dev/app/cmd/migratecmd"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/boilerplatefx"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/config/configfx"
+	"bitmagnet-io/bitmagnet/internal/database"
+	"bitmagnet-io/bitmagnet/internal/database/migrations"
+	"bitmagnet-io/bitmagnet/internal/database/postgres"
+	"bitmagnet-io/bitmagnet/internal/dev/app/cmd/gormcmd"
+	"bitmagnet-io/bitmagnet/internal/dev/app/cmd/migratecmd"
 	"go.uber.org/fx"
 )
 

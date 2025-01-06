@@ -9,7 +9,7 @@
 dump.rdb
 .jekyll-cache
 .sass-cache
-
+/out
 # Node
 /webui/node_modules
 npm-debug.log

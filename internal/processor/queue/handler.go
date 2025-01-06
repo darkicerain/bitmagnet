@@ -1,12 +1,12 @@
 package queue
 
 import (
+	"bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
+	"bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/processor"
+	"bitmagnet-io/bitmagnet/internal/queue/handler"
 	"context"
 	"encoding/json"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
-	"github.com/bitmagnet-io/bitmagnet/internal/processor"
-	"github.com/bitmagnet-io/bitmagnet/internal/queue/handler"
 	"go.uber.org/fx"
 	"time"
 )

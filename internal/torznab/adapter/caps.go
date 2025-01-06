@@ -1,8 +1,8 @@
 package adapter
 
 import (
+	"bitmagnet-io/bitmagnet/internal/torznab"
 	"context"
-	"github.com/bitmagnet-io/bitmagnet/internal/torznab"
 	"strings"
 )
 

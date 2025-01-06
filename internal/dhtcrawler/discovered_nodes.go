@@ -1,9 +1,9 @@
 package dhtcrawler
 
 import (
+	"bitmagnet-io/bitmagnet/internal/concurrency"
+	"bitmagnet-io/bitmagnet/internal/protocol/dht/ktable"
 	"context"
-	"github.com/bitmagnet-io/bitmagnet/internal/concurrency"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht/ktable"
 	"go.uber.org/fx"
 	"net/netip"
 	"time"

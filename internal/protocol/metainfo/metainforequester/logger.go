@@ -1,8 +1,8 @@
 package metainforequester
 
 import (
+	"bitmagnet-io/bitmagnet/internal/protocol"
 	"context"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
 	"go.uber.org/zap"
 	"net/netip"
 	"time"

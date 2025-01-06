@@ -1,9 +1,9 @@
 package processor
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/classifier"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
+	"bitmagnet-io/bitmagnet/internal/classifier"
+	"bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/protocol"
 )
 
 const MessageName = "process_torrent"

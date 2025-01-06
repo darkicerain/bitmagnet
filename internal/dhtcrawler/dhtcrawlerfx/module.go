@@ -1,10 +1,10 @@
 package dhtcrawlerfx
 
 import (
+	"bitmagnet-io/bitmagnet/internal/boilerplate/config/configfx"
+	"bitmagnet-io/bitmagnet/internal/dhtcrawler"
+	"bitmagnet-io/bitmagnet/internal/dhtcrawler/dhtcrawler_health_check"
 	adht "github.com/anacrolix/dht/v2"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/config/configfx"
-	"github.com/bitmagnet-io/bitmagnet/internal/dhtcrawler"
-	"github.com/bitmagnet-io/bitmagnet/internal/dhtcrawler/dhtcrawler_health_check"
 	"go.uber.org/fx"
 	"net"
 	"net/netip"

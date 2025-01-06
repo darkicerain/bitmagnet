@@ -32,6 +32,7 @@ var (
 	TorrentPieces            *torrentPieces
 	TorrentSource            *torrentSource
 	TorrentTag               *torrentTag
+	TorrentTorrentDotFile    *torrentTorrentDotFile
 	TorrentsTorrentSource    *torrentsTorrentSource
 )
 
@@ -52,6 +53,7 @@ func SetDefault(db *gorm.DB, opts ...gen.DOOption) {
 	TorrentPieces = &Q.TorrentPieces
 	TorrentSource = &Q.TorrentSource
 	TorrentTag = &Q.TorrentTag
+	TorrentTorrentDotFile = &Q.TorrentTorrentDotFile
 	TorrentsTorrentSource = &Q.TorrentsTorrentSource
 }
 
@@ -73,6 +75,7 @@ func Use(db *gorm.DB, opts ...gen.DOOption) *Query {
 		TorrentPieces:            newTorrentPieces(db, opts...),
 		TorrentSource:            newTorrentSource(db, opts...),
 		TorrentTag:               newTorrentTag(db, opts...),
+		TorrentTorrentDotFile:    newTorrentTorrentDotFile(db, opts...),
 		TorrentsTorrentSource:    newTorrentsTorrentSource(db, opts...),
 	}
 }
@@ -95,6 +98,7 @@ type Query struct {
 	TorrentPieces            torrentPieces
 	TorrentSource            torrentSource
 	TorrentTag               torrentTag
+	TorrentTorrentDotFile    torrentTorrentDotFile
 	TorrentsTorrentSource    torrentsTorrentSource
 }
 
@@ -118,6 +122,7 @@ func (q *Query) clone(db *gorm.DB) *Query {
 		TorrentPieces:            q.TorrentPieces.clone(db),
 		TorrentSource:            q.TorrentSource.clone(db),
 		TorrentTag:               q.TorrentTag.clone(db),
+		TorrentTorrentDotFile:    q.TorrentTorrentDotFile.clone(db),
 		TorrentsTorrentSource:    q.TorrentsTorrentSource.clone(db),
 	}
 }
@@ -148,6 +153,7 @@ func (q *Query) ReplaceDB(db *gorm.DB) *Query {
 		TorrentPieces:            q.TorrentPieces.replaceDB(db),
 		TorrentSource:            q.TorrentSource.replaceDB(db),
 		TorrentTag:               q.TorrentTag.replaceDB(db),
+		TorrentTorrentDotFile:    q.TorrentTorrentDotFile.replaceDB(db),
 		TorrentsTorrentSource:    q.TorrentsTorrentSource.replaceDB(db),
 	}
 }
@@ -168,6 +174,7 @@ type queryCtx struct {
 	TorrentPieces            ITorrentPiecesDo
 	TorrentSource            ITorrentSourceDo
 	TorrentTag               ITorrentTagDo
+	TorrentTorrentDotFile    ITorrentTorrentDotFileDo
 	TorrentsTorrentSource    ITorrentsTorrentSourceDo
 }
 
@@ -188,6 +195,7 @@ func (q *Query) WithContext(ctx context.Context) *queryCtx {
 		TorrentPieces:            q.TorrentPieces.WithContext(ctx),
 		TorrentSource:            q.TorrentSource.WithContext(ctx),
 		TorrentTag:               q.TorrentTag.WithContext(ctx),
+		TorrentTorrentDotFile:    q.TorrentTorrentDotFile.WithContext(ctx),
 		TorrentsTorrentSource:    q.TorrentsTorrentSource.WithContext(ctx),
 	}
 }

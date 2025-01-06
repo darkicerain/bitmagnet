@@ -1,12 +1,12 @@
 package gqlmodel
 
 import (
+	"bitmagnet-io/bitmagnet/internal/database/dao"
+	"bitmagnet-io/bitmagnet/internal/database/search"
+	"bitmagnet-io/bitmagnet/internal/gql/gqlmodel/gen"
+	"bitmagnet-io/bitmagnet/internal/metrics/torrentmetrics"
+	"bitmagnet-io/bitmagnet/internal/model"
 	"context"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/dao"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/search"
-	"github.com/bitmagnet-io/bitmagnet/internal/gql/gqlmodel/gen"
-	"github.com/bitmagnet-io/bitmagnet/internal/metrics/torrentmetrics"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
 )
 
 type TorrentQuery struct {

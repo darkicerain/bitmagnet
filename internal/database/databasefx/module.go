@@ -1,14 +1,14 @@
 package databasefx
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/config/configfx"
-	"github.com/bitmagnet-io/bitmagnet/internal/database"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/cache"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/dao"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/healthcheck"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/migrations"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/postgres"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/search"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/config/configfx"
+	"bitmagnet-io/bitmagnet/internal/database"
+	"bitmagnet-io/bitmagnet/internal/database/cache"
+	"bitmagnet-io/bitmagnet/internal/database/dao"
+	"bitmagnet-io/bitmagnet/internal/database/healthcheck"
+	"bitmagnet-io/bitmagnet/internal/database/migrations"
+	"bitmagnet-io/bitmagnet/internal/database/postgres"
+	"bitmagnet-io/bitmagnet/internal/database/search"
 	"go.uber.org/fx"
 )
 

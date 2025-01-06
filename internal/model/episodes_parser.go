@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/keywords"
+	"bitmagnet-io/bitmagnet/internal/keywords"
 	"github.com/hedhyw/rex/pkg/dialect"
 	"github.com/hedhyw/rex/pkg/rex"
 	"strconv"

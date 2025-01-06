@@ -5,9 +5,8 @@
 package model
 
 import (
+	"bitmagnet-io/bitmagnet/internal/database/fts"
 	"time"
-
-	"github.com/bitmagnet-io/bitmagnet/internal/database/fts"
 )
 
 const TableNameContent = "content"

@@ -1,9 +1,9 @@
 package tmdb
 
 import (
+	"bitmagnet-io/bitmagnet/internal/concurrency"
 	"context"
 	"errors"
-	"github.com/bitmagnet-io/bitmagnet/internal/concurrency"
 	"github.com/go-resty/resty/v2"
 )
 

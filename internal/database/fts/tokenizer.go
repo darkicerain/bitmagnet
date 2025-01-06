@@ -1,7 +1,7 @@
 package fts
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/lexer"
+	"bitmagnet-io/bitmagnet/internal/lexer"
 	"github.com/mozillazg/go-unidecode/table"
 	"strings"
 	"unicode"

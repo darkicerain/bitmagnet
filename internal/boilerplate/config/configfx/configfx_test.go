@@ -1,8 +1,8 @@
 package configfx
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/config"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/config/configresolver"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/config"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/config/configresolver"
 	"github.com/go-playground/validator/v10"
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/fx"

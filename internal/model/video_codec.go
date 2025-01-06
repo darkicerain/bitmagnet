@@ -1,8 +1,8 @@
 package model
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/keywords"
-	"github.com/bitmagnet-io/bitmagnet/internal/regex"
+	"bitmagnet-io/bitmagnet/internal/keywords"
+	"bitmagnet-io/bitmagnet/internal/regex"
 	"github.com/hedhyw/rex/pkg/rex"
 	"regexp"
 	"strings"

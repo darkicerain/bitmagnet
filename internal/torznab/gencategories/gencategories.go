@@ -1,9 +1,9 @@
 package main
 
 import (
+	"bitmagnet-io/bitmagnet/internal/maps"
+	"bitmagnet-io/bitmagnet/internal/torznab"
 	_ "embed"
-	"github.com/bitmagnet-io/bitmagnet/internal/maps"
-	"github.com/bitmagnet-io/bitmagnet/internal/torznab"
 	"os"
 	"path"
 	"runtime"

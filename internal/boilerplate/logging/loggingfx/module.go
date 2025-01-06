@@ -1,8 +1,8 @@
 package loggingfx
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/config/configfx"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/logging"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/config/configfx"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/logging"
 	"go.uber.org/fx"
 	"go.uber.org/fx/fxevent"
 	"go.uber.org/zap"

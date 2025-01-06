@@ -1,8 +1,8 @@
 package classifier
 
 import (
+	"bitmagnet-io/bitmagnet/internal/tmdb"
 	"github.com/adrg/xdg"
-	"github.com/bitmagnet-io/bitmagnet/internal/tmdb"
 	"gopkg.in/yaml.v3"
 	"os"
 )

@@ -1,9 +1,9 @@
 package client
 
 import (
+	"bitmagnet-io/bitmagnet/internal/protocol/dht"
 	"context"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht"
 	"go.uber.org/zap"
 	"net/netip"
 	"time"

@@ -1,10 +1,10 @@
 package manager
 
 import (
+	"bitmagnet-io/bitmagnet/internal/classifier"
+	"bitmagnet-io/bitmagnet/internal/processor/batch"
 	"context"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/classifier"
-	"github.com/bitmagnet-io/bitmagnet/internal/processor/batch"
 	"gorm.io/gorm"
 	"time"
 )

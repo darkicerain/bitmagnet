@@ -1,13 +1,13 @@
 package dht
 
 import (
+	"bitmagnet-io/bitmagnet/internal/protocol"
 	"bytes"
 	"encoding"
 	"encoding/binary"
 	"fmt"
 	"github.com/anacrolix/missinggo/v2/slices"
 	"github.com/anacrolix/torrent/bencode"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
 	"math"
 	"math/rand"
 	"net"

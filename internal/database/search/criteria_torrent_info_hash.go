@@ -1,10 +1,10 @@
 package search
 
 import (
+	"bitmagnet-io/bitmagnet/internal/database/query"
+	"bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/protocol"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/query"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
 	"strings"
 )
 

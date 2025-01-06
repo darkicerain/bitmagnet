@@ -1,9 +1,9 @@
 package metainforequester
 
 import (
+	"bitmagnet-io/bitmagnet/internal/concurrency"
+	"bitmagnet-io/bitmagnet/internal/protocol"
 	"context"
-	"github.com/bitmagnet-io/bitmagnet/internal/concurrency"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
 	"net/netip"
 )
 

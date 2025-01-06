@@ -1,8 +1,8 @@
 package gormcmd
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/gen"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
+	"bitmagnet-io/bitmagnet/internal/database/gen"
 	"github.com/urfave/cli/v2"
 	"go.uber.org/fx"
 	"gorm.io/gorm"

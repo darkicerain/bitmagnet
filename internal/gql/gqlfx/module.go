@@ -1,19 +1,19 @@
 package gqlfx
 
 import (
+	"bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/worker"
+	"bitmagnet-io/bitmagnet/internal/database/dao"
+	"bitmagnet-io/bitmagnet/internal/database/search"
+	"bitmagnet-io/bitmagnet/internal/gql"
+	"bitmagnet-io/bitmagnet/internal/gql/config"
+	"bitmagnet-io/bitmagnet/internal/gql/httpserver"
+	"bitmagnet-io/bitmagnet/internal/gql/resolvers"
+	"bitmagnet-io/bitmagnet/internal/health"
+	"bitmagnet-io/bitmagnet/internal/metrics/queuemetrics"
+	"bitmagnet-io/bitmagnet/internal/metrics/torrentmetrics"
+	"bitmagnet-io/bitmagnet/internal/queue/manager"
 	"github.com/99designs/gqlgen/graphql"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/worker"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/dao"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/search"
-	"github.com/bitmagnet-io/bitmagnet/internal/gql"
-	"github.com/bitmagnet-io/bitmagnet/internal/gql/config"
-	"github.com/bitmagnet-io/bitmagnet/internal/gql/httpserver"
-	"github.com/bitmagnet-io/bitmagnet/internal/gql/resolvers"
-	"github.com/bitmagnet-io/bitmagnet/internal/health"
-	"github.com/bitmagnet-io/bitmagnet/internal/metrics/queuemetrics"
-	"github.com/bitmagnet-io/bitmagnet/internal/metrics/torrentmetrics"
-	"github.com/bitmagnet-io/bitmagnet/internal/queue/manager"
 	"go.uber.org/fx"
 )
 

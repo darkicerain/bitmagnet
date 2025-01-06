@@ -5,12 +5,12 @@
 package itorrents
 
 import (
+	"bitmagnet-io/bitmagnet/internal/boilerplate/httpclient/httplogger"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/httpclient/httpratelimiter"
+	"bitmagnet-io/bitmagnet/internal/protocol"
+	"bitmagnet-io/bitmagnet/internal/protocol/metainfo"
 	"context"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/httpclient/httplogger"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/httpclient/httpratelimiter"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/metainfo"
 	"go.uber.org/fx"
 	"go.uber.org/zap"
 	"io"

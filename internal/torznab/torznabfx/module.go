@@ -1,8 +1,8 @@
 package torznabfx
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/torznab/adapter"
-	"github.com/bitmagnet-io/bitmagnet/internal/torznab/httpserver"
+	"bitmagnet-io/bitmagnet/internal/torznab/adapter"
+	"bitmagnet-io/bitmagnet/internal/torznab/httpserver"
 	"go.uber.org/fx"
 )
 

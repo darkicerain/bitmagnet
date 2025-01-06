@@ -1,8 +1,8 @@
 package client
 
 import (
+	"bitmagnet-io/bitmagnet/internal/protocol"
 	"context"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
 	"github.com/bits-and-blooms/bloom/v3"
 	"net/netip"
 )

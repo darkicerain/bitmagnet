@@ -1,8 +1,8 @@
 package classifier
 
 import (
+	"bitmagnet-io/bitmagnet/internal/classifier/classification"
 	"errors"
-	"github.com/bitmagnet-io/bitmagnet/internal/classifier/classification"
 )
 
 const findMatchName = "find_match"

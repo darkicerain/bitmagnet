@@ -1,11 +1,11 @@
 package classifier
 
 import (
+	"bitmagnet-io/bitmagnet/internal/classifier/classification"
+	"bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/protobuf"
 	"context"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/classifier/classification"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
-	"github.com/bitmagnet-io/bitmagnet/internal/protobuf"
 	"github.com/google/cel-go/common/types/ref"
 )
 

@@ -1,11 +1,12 @@
 package httpserver
 
 import (
+	"bitmagnet-io/bitmagnet/internal/boilerplate/httpserver/ginzap"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/worker"
+
 	"context"
 	"errors"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/httpserver/ginzap"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/worker"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/fx"
 	"go.uber.org/zap"

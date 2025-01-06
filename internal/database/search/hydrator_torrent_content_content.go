@@ -1,9 +1,9 @@
 package search
 
 import (
+	"bitmagnet-io/bitmagnet/internal/database/query"
+	"bitmagnet-io/bitmagnet/internal/model"
 	"context"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/query"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
 )
 
 func HydrateTorrentContentContent() query.Option {

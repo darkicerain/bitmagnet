@@ -1,12 +1,12 @@
 package server
 
 import (
+	"bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
+	"bitmagnet-io/bitmagnet/internal/concurrency"
+	"bitmagnet-io/bitmagnet/internal/protocol/dht"
+	"bitmagnet-io/bitmagnet/internal/protocol/dht/responder"
 	"context"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
-	"github.com/bitmagnet-io/bitmagnet/internal/concurrency"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht/responder"
 	"github.com/prometheus/client_golang/prometheus"
 	"go.uber.org/fx"
 	"go.uber.org/zap"

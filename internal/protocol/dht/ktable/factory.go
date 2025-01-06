@@ -1,7 +1,7 @@
 package ktable
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht/ktable/btree"
+	"bitmagnet-io/bitmagnet/internal/protocol/dht/ktable/btree"
 	"github.com/prometheus/client_golang/prometheus"
 	"go.uber.org/fx"
 	"net/netip"

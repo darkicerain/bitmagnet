@@ -1,8 +1,8 @@
 package server
 
 import (
+	"bitmagnet-io/bitmagnet/internal/protocol/dht"
 	"context"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht"
 	"github.com/prometheus/client_golang/prometheus"
 	"net/netip"
 	"time"

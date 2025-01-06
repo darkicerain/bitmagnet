@@ -1,8 +1,8 @@
 package classifier
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/classifier/classification"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/classifier/classification"
+	"bitmagnet-io/bitmagnet/internal/model"
 )
 
 const setContentTypeName = "set_content_type"

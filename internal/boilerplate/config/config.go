@@ -1,9 +1,9 @@
 package config
 
 import (
+	"bitmagnet-io/bitmagnet/internal/boilerplate/config/configresolver"
 	"errors"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/config/configresolver"
 	validator "github.com/go-playground/validator/v10"
 	"github.com/iancoleman/strcase"
 	"github.com/mitchellh/mapstructure"

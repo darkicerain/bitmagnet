@@ -1,11 +1,11 @@
 package search
 
 import (
+	"bitmagnet-io/bitmagnet/internal/database/dao"
+	"bitmagnet-io/bitmagnet/internal/database/query"
+	"bitmagnet-io/bitmagnet/internal/maps"
+	"bitmagnet-io/bitmagnet/internal/model"
 	"context"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/dao"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/query"
-	"github.com/bitmagnet-io/bitmagnet/internal/maps"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
 	"gorm.io/gen/field"
 )
 

@@ -1,8 +1,8 @@
 package tmdb
 
 import (
+	"bitmagnet-io/bitmagnet/internal/model"
 	"context"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
 )
 
 type Client interface {

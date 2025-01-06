@@ -1,8 +1,8 @@
 package migrations
 
 import (
+	"bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
 	"context"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
 	"go.uber.org/fx"
 	"go.uber.org/zap"
 	"gorm.io/gorm"

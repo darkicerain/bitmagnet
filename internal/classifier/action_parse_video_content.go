@@ -1,8 +1,8 @@
 package classifier
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/classifier/classification"
-	"github.com/bitmagnet-io/bitmagnet/internal/classifier/parsers"
+	"bitmagnet-io/bitmagnet/internal/classifier/classification"
+	"bitmagnet-io/bitmagnet/internal/classifier/parsers"
 )
 
 const parseVideoContentName = "parse_video_content"

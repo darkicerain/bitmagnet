@@ -1,9 +1,9 @@
 package tmdb_health
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
-	"github.com/bitmagnet-io/bitmagnet/internal/health"
-	"github.com/bitmagnet-io/bitmagnet/internal/tmdb"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
+	"bitmagnet-io/bitmagnet/internal/health"
+	"bitmagnet-io/bitmagnet/internal/tmdb"
 	"go.uber.org/fx"
 	"time"
 )

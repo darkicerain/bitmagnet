@@ -1,7 +1,7 @@
 package httpratelimiter
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/httpclient"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/httpclient"
 	"golang.org/x/time/rate"
 	"net/http"
 	"time"

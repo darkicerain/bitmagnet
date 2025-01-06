@@ -1,10 +1,10 @@
 package gqlmodel
 
 import (
+	"bitmagnet-io/bitmagnet/internal/gql/gqlmodel/gen"
+	"bitmagnet-io/bitmagnet/internal/metrics/torrentmetrics"
 	"context"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/gql/gqlmodel/gen"
-	"github.com/bitmagnet-io/bitmagnet/internal/metrics/torrentmetrics"
 )
 
 func (t TorrentQuery) Metrics(ctx context.Context, input gen.TorrentMetricsQueryInput) (*gen.TorrentMetricsQueryResult, error) {

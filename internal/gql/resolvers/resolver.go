@@ -1,13 +1,13 @@
 package resolvers
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/worker"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/dao"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/search"
-	"github.com/bitmagnet-io/bitmagnet/internal/health"
-	"github.com/bitmagnet-io/bitmagnet/internal/metrics/queuemetrics"
-	"github.com/bitmagnet-io/bitmagnet/internal/metrics/torrentmetrics"
-	"github.com/bitmagnet-io/bitmagnet/internal/queue/manager"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/worker"
+	"bitmagnet-io/bitmagnet/internal/database/dao"
+	"bitmagnet-io/bitmagnet/internal/database/search"
+	"bitmagnet-io/bitmagnet/internal/health"
+	"bitmagnet-io/bitmagnet/internal/metrics/queuemetrics"
+	"bitmagnet-io/bitmagnet/internal/metrics/torrentmetrics"
+	"bitmagnet-io/bitmagnet/internal/queue/manager"
 )
 
 // This file will not be regenerated automatically.

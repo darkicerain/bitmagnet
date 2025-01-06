@@ -1,12 +1,12 @@
 package httpserver
 
 import (
+	"bitmagnet-io/bitmagnet/internal/boilerplate/httpserver"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
+	"bitmagnet-io/bitmagnet/internal/importer"
 	"bufio"
 	"encoding/json"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/httpserver"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
-	"github.com/bitmagnet-io/bitmagnet/internal/importer"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/fx"
 	"go.uber.org/zap"

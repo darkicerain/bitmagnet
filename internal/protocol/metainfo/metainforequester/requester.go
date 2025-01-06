@@ -1,6 +1,8 @@
 package metainforequester
 
 import (
+	"bitmagnet-io/bitmagnet/internal/protocol"
+	"bitmagnet-io/bitmagnet/internal/protocol/metainfo"
 	"bytes"
 	"context"
 	"encoding/binary"
@@ -8,8 +10,6 @@ import (
 	"fmt"
 	"github.com/anacrolix/torrent/bencode"
 	"github.com/anacrolix/torrent/peer_protocol"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/metainfo"
 	"io"
 	"math"
 	"net"

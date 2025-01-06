@@ -16,7 +16,7 @@ import (
 
 	"gorm.io/plugin/dbresolver"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/model"
 )
 
 func newTorrentContent(db *gorm.DB, opts ...gen.DOOption) torrentContent {
@@ -84,6 +84,11 @@ func newTorrentContent(db *gorm.DB, opts ...gen.DOOption) torrentContent {
 			field.RelationField
 		}{
 			RelationField: field.NewRelation("Torrent.Pieces", "model.TorrentPieces"),
+		},
+		Binary: struct {
+			field.RelationField
+		}{
+			RelationField: field.NewRelation("Torrent.Binary", "model.TorrentTorrentDotFile"),
 		},
 		Tags: struct {
 			field.RelationField
@@ -271,6 +276,9 @@ type torrentContentBelongsToTorrent struct {
 		field.RelationField
 	}
 	Pieces struct {
+		field.RelationField
+	}
+	Binary struct {
 		field.RelationField
 	}
 	Tags struct {

@@ -1,8 +1,8 @@
 package app
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/logging/loggingfx"
-	"github.com/bitmagnet-io/bitmagnet/internal/dev/devfx"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/logging/loggingfx"
+	"bitmagnet-io/bitmagnet/internal/dev/devfx"
 	"github.com/urfave/cli/v2"
 	"go.uber.org/fx"
 	"go.uber.org/zap"

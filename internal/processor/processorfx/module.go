@@ -1,10 +1,10 @@
 package processorfx
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/config/configfx"
-	"github.com/bitmagnet-io/bitmagnet/internal/processor"
-	batchqueue "github.com/bitmagnet-io/bitmagnet/internal/processor/batch/queue"
-	processorqueue "github.com/bitmagnet-io/bitmagnet/internal/processor/queue"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/config/configfx"
+	"bitmagnet-io/bitmagnet/internal/processor"
+	batchqueue "bitmagnet-io/bitmagnet/internal/processor/batch/queue"
+	processorqueue "bitmagnet-io/bitmagnet/internal/processor/queue"
 	"go.uber.org/fx"
 )
 

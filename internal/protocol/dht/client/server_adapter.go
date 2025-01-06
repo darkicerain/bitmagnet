@@ -1,11 +1,11 @@
 package client
 
 import (
+	"bitmagnet-io/bitmagnet/internal/protocol"
+	"bitmagnet-io/bitmagnet/internal/protocol/dht"
+	"bitmagnet-io/bitmagnet/internal/protocol/dht/server"
 	"context"
 	"errors"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht/server"
 	"net/netip"
 )
 

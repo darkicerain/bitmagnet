@@ -8,13 +8,13 @@ import (
 	"context"
 	"sort"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/database/query"
-	"github.com/bitmagnet-io/bitmagnet/internal/gql"
-	"github.com/bitmagnet-io/bitmagnet/internal/gql/gqlmodel"
-	"github.com/bitmagnet-io/bitmagnet/internal/gql/gqlmodel/gen"
-	"github.com/bitmagnet-io/bitmagnet/internal/health"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
-	"github.com/bitmagnet-io/bitmagnet/internal/version"
+	"bitmagnet-io/bitmagnet/internal/database/query"
+	"bitmagnet-io/bitmagnet/internal/gql"
+	"bitmagnet-io/bitmagnet/internal/gql/gqlmodel"
+	"bitmagnet-io/bitmagnet/internal/gql/gqlmodel/gen"
+	"bitmagnet-io/bitmagnet/internal/health"
+	"bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/version"
 )
 
 // Version is the resolver for the version field.

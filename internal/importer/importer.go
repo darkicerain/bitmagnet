@@ -1,13 +1,13 @@
 package importer
 
 import (
+	"bitmagnet-io/bitmagnet/internal/database/dao"
+	"bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/processor"
+	"bitmagnet-io/bitmagnet/internal/protocol"
 	"context"
 	"database/sql"
 	"errors"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/dao"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
-	"github.com/bitmagnet-io/bitmagnet/internal/processor"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
 	"gorm.io/gorm/clause"
 	"sync"
 	"time"

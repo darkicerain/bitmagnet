@@ -1,7 +1,7 @@
 package httplogger
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/httpclient"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/httpclient"
 	"go.uber.org/zap"
 	"net/http"
 	"time"

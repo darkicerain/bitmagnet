@@ -1,7 +1,7 @@
 package torznab
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/model"
 )
 
 type SearchRequest struct {

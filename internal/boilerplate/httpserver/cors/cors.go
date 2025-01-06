@@ -1,7 +1,7 @@
 package cors
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/httpserver"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/httpserver"
 	"github.com/gin-gonic/gin"
 	"github.com/rs/cors"
 	gincors "github.com/rs/cors/wrapper/gin"

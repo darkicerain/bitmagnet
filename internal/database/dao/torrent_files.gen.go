@@ -16,7 +16,7 @@ import (
 
 	"gorm.io/plugin/dbresolver"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/model"
 )
 
 func newTorrentFile(db *gorm.DB, opts ...gen.DOOption) torrentFile {

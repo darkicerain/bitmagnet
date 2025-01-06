@@ -1,10 +1,10 @@
 package dhtcrawler
 
 import (
+	"bitmagnet-io/bitmagnet/internal/protocol"
+	"bitmagnet-io/bitmagnet/internal/protocol/metainfo/metainforequester"
 	"context"
 	"errors"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/metainfo/metainforequester"
 	"net/netip"
 	"sync"
 )

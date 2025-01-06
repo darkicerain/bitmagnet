@@ -3,8 +3,8 @@
 package ktable_mocks
 
 import (
-	ktable "github.com/bitmagnet-io/bitmagnet/internal/protocol/dht/ktable"
-	btree "github.com/bitmagnet-io/bitmagnet/internal/protocol/dht/ktable/btree"
+	ktable "bitmagnet-io/bitmagnet/internal/protocol/dht/ktable"
+	btree "bitmagnet-io/bitmagnet/internal/protocol/dht/ktable/btree"
 
 	mock "github.com/stretchr/testify/mock"
 

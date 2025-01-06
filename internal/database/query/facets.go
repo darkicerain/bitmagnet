@@ -1,12 +1,12 @@
 package query
 
 import (
+	"bitmagnet-io/bitmagnet/internal/database/dao"
+	"bitmagnet-io/bitmagnet/internal/maps"
+	"bitmagnet-io/bitmagnet/internal/model"
 	"context"
 	"errors"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/dao"
-	"github.com/bitmagnet-io/bitmagnet/internal/maps"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
 	"sort"
 	"sync"
 )

@@ -1,7 +1,7 @@
 package ktable
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
+	"bitmagnet-io/bitmagnet/internal/protocol"
 	"net/netip"
 	"time"
 )

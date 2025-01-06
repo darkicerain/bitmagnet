@@ -1,12 +1,12 @@
 package gqlmodel
 
 import (
+	"bitmagnet-io/bitmagnet/internal/database/search"
+	"bitmagnet-io/bitmagnet/internal/gql/gqlmodel/gen"
+	"bitmagnet-io/bitmagnet/internal/metrics/queuemetrics"
+	"bitmagnet-io/bitmagnet/internal/queue/manager"
 	"context"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/search"
-	"github.com/bitmagnet-io/bitmagnet/internal/gql/gqlmodel/gen"
-	"github.com/bitmagnet-io/bitmagnet/internal/metrics/queuemetrics"
-	"github.com/bitmagnet-io/bitmagnet/internal/queue/manager"
 )
 
 type QueueQuery struct {

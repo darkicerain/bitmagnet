@@ -1,8 +1,8 @@
 package classifier
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/classifier/classification"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/classifier/classification"
+	"bitmagnet-io/bitmagnet/internal/model"
 )
 
 const attachLocalContentByIdName = "attach_local_content_by_id"

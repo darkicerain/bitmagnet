@@ -1,15 +1,15 @@
 package query
 
 import (
+	"bitmagnet-io/bitmagnet/internal/database/dao"
+	"bitmagnet-io/bitmagnet/internal/database/exclause"
+	"bitmagnet-io/bitmagnet/internal/database/fts"
+	"bitmagnet-io/bitmagnet/internal/maps"
+	"bitmagnet-io/bitmagnet/internal/model"
 	"bytes"
 	"context"
 	"errors"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/dao"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/exclause"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/fts"
-	"github.com/bitmagnet-io/bitmagnet/internal/maps"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
 	"gorm.io/gen"
 	"gorm.io/gen/field"
 	"gorm.io/gorm"

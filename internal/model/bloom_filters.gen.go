@@ -5,9 +5,8 @@
 package model
 
 import (
+	"bitmagnet-io/bitmagnet/internal/bloom"
 	"time"
-
-	"github.com/bitmagnet-io/bitmagnet/internal/bloom"
 )
 
 const TableNameBloomFilter = "bloom_filters"

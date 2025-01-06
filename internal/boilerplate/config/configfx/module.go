@@ -1,9 +1,9 @@
 package configfx
 
 import (
+	"bitmagnet-io/bitmagnet/internal/boilerplate/config"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/config/configresolver"
 	"github.com/adrg/xdg"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/config"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/config/configresolver"
 	"go.uber.org/fx"
 	"os"
 	"strings"

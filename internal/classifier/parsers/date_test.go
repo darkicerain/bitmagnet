@@ -1,7 +1,7 @@
 package parsers
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/model"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

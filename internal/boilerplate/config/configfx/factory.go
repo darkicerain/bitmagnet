@@ -1,8 +1,8 @@
 package configfx
 
 import (
+	"bitmagnet-io/bitmagnet/internal/boilerplate/config"
 	"errors"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/config"
 	"go.uber.org/fx"
 )
 

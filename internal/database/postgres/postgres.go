@@ -1,10 +1,10 @@
 package postgres
 
 import (
+	"bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
 	"context"
 	"database/sql"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
 	"github.com/jackc/pgx/v5/pgxpool"
 	"github.com/jackc/pgx/v5/stdlib"
 	"go.uber.org/fx"

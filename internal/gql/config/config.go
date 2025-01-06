@@ -1,9 +1,9 @@
 package config
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
-	"github.com/bitmagnet-io/bitmagnet/internal/gql"
-	"github.com/bitmagnet-io/bitmagnet/internal/gql/resolvers"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
+	"bitmagnet-io/bitmagnet/internal/gql"
+	"bitmagnet-io/bitmagnet/internal/gql/resolvers"
 	"go.uber.org/fx"
 )
 

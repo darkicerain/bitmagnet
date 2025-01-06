@@ -7,9 +7,9 @@ package resolvers
 import (
 	"context"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/gql"
-	"github.com/bitmagnet-io/bitmagnet/internal/gql/gqlmodel"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
+	"bitmagnet-io/bitmagnet/internal/gql"
+	"bitmagnet-io/bitmagnet/internal/gql/gqlmodel"
+	"bitmagnet-io/bitmagnet/internal/protocol"
 )
 
 // Torrent is the resolver for the torrent field.

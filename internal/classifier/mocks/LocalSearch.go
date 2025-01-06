@@ -5,7 +5,7 @@ package classifier_mocks
 import (
 	context "context"
 
-	model "github.com/bitmagnet-io/bitmagnet/internal/model"
+	model "bitmagnet-io/bitmagnet/internal/model"
 	mock "github.com/stretchr/testify/mock"
 )
 

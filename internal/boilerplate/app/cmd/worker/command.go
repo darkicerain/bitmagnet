@@ -1,7 +1,7 @@
 package workercmd
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/worker"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/worker"
 	"github.com/urfave/cli/v2"
 	"go.uber.org/fx"
 )

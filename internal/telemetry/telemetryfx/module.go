@@ -1,8 +1,8 @@
 package telemetryfx
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/telemetry/httpserver"
-	"github.com/bitmagnet-io/bitmagnet/internal/telemetry/prometheus"
+	"bitmagnet-io/bitmagnet/internal/telemetry/httpserver"
+	"bitmagnet-io/bitmagnet/internal/telemetry/prometheus"
 	"go.uber.org/fx"
 )
 

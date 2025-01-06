@@ -1,8 +1,8 @@
 package metricsfx
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/metrics/queuemetrics"
-	"github.com/bitmagnet-io/bitmagnet/internal/metrics/torrentmetrics"
+	"bitmagnet-io/bitmagnet/internal/metrics/queuemetrics"
+	"bitmagnet-io/bitmagnet/internal/metrics/torrentmetrics"
 	"go.uber.org/fx"
 )
 

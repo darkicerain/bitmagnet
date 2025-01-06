@@ -1,7 +1,7 @@
 package validationfx
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/validation"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/validation"
 	"go.uber.org/fx"
 )
 

@@ -1,8 +1,8 @@
 package importerfx
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/importer"
-	"github.com/bitmagnet-io/bitmagnet/internal/importer/httpserver"
+	"bitmagnet-io/bitmagnet/internal/importer"
+	"bitmagnet-io/bitmagnet/internal/importer/httpserver"
 	"go.uber.org/fx"
 )
 

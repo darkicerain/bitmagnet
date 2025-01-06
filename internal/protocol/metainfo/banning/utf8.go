@@ -1,8 +1,8 @@
 package banning
 
 import (
+	"bitmagnet-io/bitmagnet/internal/protocol/metainfo"
 	"errors"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/metainfo"
 	"strings"
 	"unicode/utf8"
 )

@@ -5,13 +5,13 @@
 package server
 
 import (
+	"bitmagnet-io/bitmagnet/internal/database/dao"
+	"bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/queue"
+	"bitmagnet-io/bitmagnet/internal/queue/handler"
 	"context"
 	"database/sql"
 	"errors"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/dao"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
-	"github.com/bitmagnet-io/bitmagnet/internal/queue"
-	"github.com/bitmagnet-io/bitmagnet/internal/queue/handler"
 	"github.com/jackc/pgx/v5/pgconn"
 	"go.uber.org/zap"
 	"golang.org/x/sync/semaphore"

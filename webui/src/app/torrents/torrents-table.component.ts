@@ -132,8 +132,9 @@ export const allColumns = [
   "publishedAt",
   "peers",
   "magnet",
+  "download"
 ] as const;
 
-export const compactColumns = ["select", "summary", "size", "magnet"] as const;
+export const compactColumns = ["select", "summary", "size", "magnet","download"] as const;
 
 export type Column = (typeof allColumns)[number];

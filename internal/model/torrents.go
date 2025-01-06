@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/lexer"
+	"bitmagnet-io/bitmagnet/internal/lexer"
 	"github.com/facette/natsort"
 	"gorm.io/gorm"
 	"net/url"
@@ -74,6 +74,9 @@ func (t Torrent) MagnetUri() string {
 	return "magnet:?xt=urn:btih:" + t.InfoHash.String() +
 		"&dn=" + url.QueryEscape(t.Name) +
 		"&xl=" + strconv.FormatUint(uint64(t.Size), 10)
+}
+func (t Torrent) DotTorrentFile() []byte {
+	return t.Binary.BinaryFile
 }
 
 // HasFilesInfo returns true if we know about the files in this torrent.

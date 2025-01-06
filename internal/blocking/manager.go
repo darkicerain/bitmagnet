@@ -1,10 +1,10 @@
 package blocking
 
 import (
+	"bitmagnet-io/bitmagnet/internal/bloom"
+	"bitmagnet-io/bitmagnet/internal/database/dao"
+	"bitmagnet-io/bitmagnet/internal/protocol"
 	"context"
-	"github.com/bitmagnet-io/bitmagnet/internal/bloom"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/dao"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
 	"sync"
 	"time"
 )

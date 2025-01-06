@@ -1,4 +1,4 @@
-FROM golang:alpine3.18
+FROM golang:alpine
 
 RUN apk --update add \
     gcc \
@@ -10,8 +10,8 @@ RUN mkdir /app
 
 WORKDIR /app
 
-COPY go.mod go.sum ./
+#COPY go.mod go.sum ./
+#
+#RUN go mod download
 
-RUN go mod download
-
-ENTRYPOINT ["tail", "-f", "/dev/null"]
+ENTRYPOINT ["./cmd.sh"]

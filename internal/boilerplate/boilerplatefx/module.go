@@ -1,10 +1,10 @@
 package boilerplatefx
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/cli/clifx"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/config/configfx"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/logging/loggingfx"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/validation/validationfx"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/cli/clifx"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/config/configfx"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/logging/loggingfx"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/validation/validationfx"
 	"go.uber.org/fx"
 )
 

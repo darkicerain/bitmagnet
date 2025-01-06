@@ -1,7 +1,7 @@
 package bloom
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht"
+	"bitmagnet-io/bitmagnet/internal/protocol/dht"
 	"github.com/stretchr/testify/assert"
 	"net"
 	"testing"

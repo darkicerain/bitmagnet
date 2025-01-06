@@ -1,10 +1,10 @@
 package batch
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/classifier"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
-	"github.com/bitmagnet-io/bitmagnet/internal/processor"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
+	"bitmagnet-io/bitmagnet/internal/classifier"
+	"bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/processor"
+	"bitmagnet-io/bitmagnet/internal/protocol"
 	"time"
 )
 

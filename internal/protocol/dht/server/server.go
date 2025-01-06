@@ -1,12 +1,12 @@
 package server
 
 import (
+	"bitmagnet-io/bitmagnet/internal/protocol/dht"
+	"bitmagnet-io/bitmagnet/internal/protocol/dht/responder"
 	"context"
 	"errors"
 	"fmt"
 	"github.com/anacrolix/torrent/bencode"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht/responder"
 	"go.uber.org/zap"
 	"net/netip"
 	"sync"

@@ -1,12 +1,13 @@
 package dhtcrawler
 
 import (
+	"bitmagnet-io/bitmagnet/internal/database/dao"
+	"bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/processor"
+	"bitmagnet-io/bitmagnet/internal/protocol"
+	"bitmagnet-io/bitmagnet/internal/protocol/metainfo"
 	"context"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/dao"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
-	"github.com/bitmagnet-io/bitmagnet/internal/processor"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/metainfo"
+	"github.com/anacrolix/torrent/bencode"
 	"github.com/prometheus/client_golang/prometheus"
 	"gorm.io/gen"
 	"gorm.io/gorm/clause"
@@ -26,6 +27,7 @@ func (c *crawler) runPersistTorrents(ctx context.Context) {
 			var torrentFilesToPersist []*model.TorrentFile
 			var torrentSourcesToPersist []*model.TorrentsTorrentSource
 			var torrentPiecesToPersist []*model.TorrentPieces
+			var torrentDotFileToPersist []*model.TorrentTorrentDotFile
 			var queueJobsToPersist []*model.QueueJob
 			hashMap := make(map[protocol.ID]infoHashWithMetaInfo, len(is))
 			var hashesToClassify []protocol.ID
@@ -69,6 +71,8 @@ func (c *crawler) runPersistTorrents(ctx context.Context) {
 						torrentPiecesToPersist = append(torrentPiecesToPersist, &pc)
 						t.Pieces = model.TorrentPieces{}
 					}
+					bin := t.Binary
+					torrentDotFileToPersist = append(torrentDotFileToPersist, &bin)
 					torrentsToPersist = append(torrentsToPersist, &t)
 					hashesToClassify = append(hashesToClassify, i.infoHash)
 					if len(hashesToClassify) >= classifyBatchSize {
@@ -107,6 +111,11 @@ func (c *crawler) runPersistTorrents(ctx context.Context) {
 					}).CreateInBatches(torrentPiecesToPersist, 10); err != nil {
 						return err
 					}
+				}
+				if err := tx.WithContext(ctx).TorrentTorrentDotFile.Clauses(clause.OnConflict{
+					DoNothing: true,
+				}).CreateInBatches(torrentDotFileToPersist, 10); err != nil {
+					return err
 				}
 				if err := tx.WithContext(ctx).QueueJob.CreateInBatches(queueJobsToPersist, 10); err != nil {
 					return err
@@ -168,6 +177,17 @@ func createTorrentModel(
 			Pieces:      info.Pieces,
 		}
 	}
+	var file model.TorrentTorrentDotFile
+	byteValue, err := bencode.Marshal(map[string]metainfo.Info{
+		"info": info,
+	})
+	if err == nil {
+		file = model.TorrentTorrentDotFile{
+			InfoHash:   hash,
+			BinaryFile: byteValue,
+		}
+	}
+
 	return model.Torrent{
 		InfoHash:    hash,
 		Name:        name,
@@ -177,6 +197,7 @@ func createTorrentModel(
 		Files:       files,
 		FilesStatus: filesStatus,
 		FilesCount:  filesCount,
+		Binary:      file,
 		Sources: []model.TorrentsTorrentSource{
 			{
 				Source:   "dht",

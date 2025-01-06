@@ -1,12 +1,12 @@
 package fts
 
 import (
+	"bitmagnet-io/bitmagnet/internal/lexer"
+	"bitmagnet-io/bitmagnet/internal/maps"
 	"context"
 	"database/sql/driver"
 	"errors"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/lexer"
-	"github.com/bitmagnet-io/bitmagnet/internal/maps"
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
 	"regexp"

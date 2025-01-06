@@ -1,10 +1,10 @@
 package database
 
 import (
+	"bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
+	"bitmagnet-io/bitmagnet/internal/database/exclause"
+	"bitmagnet-io/bitmagnet/internal/database/logger"
 	"database/sql"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/exclause"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/logger"
 	"go.uber.org/fx"
 	"go.uber.org/zap"
 	"gorm.io/driver/postgres"

@@ -1,9 +1,9 @@
 package responder
 
 import (
+	"bitmagnet-io/bitmagnet/internal/protocol/dht"
+	"bitmagnet-io/bitmagnet/internal/protocol/dht/ktable"
 	"context"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht/ktable"
 	"time"
 )
 

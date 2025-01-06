@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/gql/enums"
+	"bitmagnet-io/bitmagnet/internal/gql/enums"
 	"os"
 	"strings"
 )

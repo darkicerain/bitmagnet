@@ -1,8 +1,8 @@
 package fts
 
 import (
+	"bitmagnet-io/bitmagnet/internal/lexer"
 	"errors"
-	"github.com/bitmagnet-io/bitmagnet/internal/lexer"
 )
 
 func newLexer(str string) ftsLexer {

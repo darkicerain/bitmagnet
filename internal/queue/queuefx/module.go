@@ -1,9 +1,9 @@
 package queuefx
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/queue/manager"
-	"github.com/bitmagnet-io/bitmagnet/internal/queue/prometheus"
-	"github.com/bitmagnet-io/bitmagnet/internal/queue/server"
+	"bitmagnet-io/bitmagnet/internal/queue/manager"
+	"bitmagnet-io/bitmagnet/internal/queue/prometheus"
+	"bitmagnet-io/bitmagnet/internal/queue/server"
 	"go.uber.org/fx"
 )
 

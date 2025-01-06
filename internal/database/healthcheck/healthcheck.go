@@ -1,11 +1,11 @@
 package healthcheck
 
 import (
+	"bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
+	"bitmagnet-io/bitmagnet/internal/health"
 	"context"
 	"database/sql"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
-	"github.com/bitmagnet-io/bitmagnet/internal/health"
 	"go.uber.org/fx"
 	"time"
 )

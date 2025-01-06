@@ -8,10 +8,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/99designs/gqlgen/graphql"
-	"github.com/bitmagnet-io/bitmagnet/internal/metrics/queuemetrics"
-	"github.com/bitmagnet-io/bitmagnet/internal/metrics/torrentmetrics"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/metrics/queuemetrics"
+	"bitmagnet-io/bitmagnet/internal/metrics/torrentmetrics"
+	"bitmagnet-io/bitmagnet/internal/model"
+
 )
 
 type ContentTypeAgg struct {

@@ -1,8 +1,8 @@
 package classifier
 
 import (
+	"bitmagnet-io/bitmagnet/internal/classifier/classification"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/classifier/classification"
 )
 
 const runWorkflowName = "run_workflow"

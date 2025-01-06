@@ -5,10 +5,9 @@
 package model
 
 import (
+	"bitmagnet-io/bitmagnet/internal/protocol"
 	"database/sql"
 	"time"
-
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
 )
 
 const TableNameTorrentsTorrentSource = "torrents_torrent_sources"

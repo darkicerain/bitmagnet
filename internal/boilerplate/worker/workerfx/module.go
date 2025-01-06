@@ -1,7 +1,7 @@
 package workerfx
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/worker"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/worker"
 	"go.uber.org/fx"
 )
 

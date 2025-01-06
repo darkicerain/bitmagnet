@@ -1,10 +1,10 @@
 package handler
 
 import (
+	"bitmagnet-io/bitmagnet/internal/model"
 	"context"
 	"errors"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
 	"log"
 	"runtime"
 	"runtime/debug"

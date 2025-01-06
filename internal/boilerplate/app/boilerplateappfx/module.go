@@ -1,11 +1,11 @@
 package boilerplateappfx
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/app/cmd/config"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/app/cmd/worker"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/boilerplatefx"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/cli/hooks"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/worker/workerfx"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/app/cmd/config"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/app/cmd/worker"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/boilerplatefx"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/cli/hooks"
+	"bitmagnet-io/bitmagnet/internal/boilerplate/worker/workerfx"
 	"go.uber.org/fx"
 )
 

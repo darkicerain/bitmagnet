@@ -1,9 +1,9 @@
 package classifier
 
 import (
+	"bitmagnet-io/bitmagnet/internal/classifier/classification"
 	"errors"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/classifier/classification"
 )
 
 func actions(defs ...actionDefinition) feature {

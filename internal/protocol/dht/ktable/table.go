@@ -1,8 +1,8 @@
 package ktable
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht/ktable/btree"
+	"bitmagnet-io/bitmagnet/internal/protocol"
+	"bitmagnet-io/bitmagnet/internal/protocol/dht/ktable/btree"
 	"net/netip"
 	"sync"
 	"time"

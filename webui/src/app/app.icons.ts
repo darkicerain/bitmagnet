@@ -25,4 +25,7 @@ export const initializeIcons = (
     .addSvgIcon(
       "queue",
       domSanitizer.bypassSecurityTrustResourceUrl("queue.svg"),
-    );
+    ).addSvgIcon(
+    "download",
+    domSanitizer.bypassSecurityTrustResourceUrl("download.svg"),
+  );

@@ -1,8 +1,8 @@
 package model
 
 import (
+	"bitmagnet-io/bitmagnet/internal/database/fts"
 	"fmt"
-	"github.com/bitmagnet-io/bitmagnet/internal/database/fts"
 	"strings"
 )
 

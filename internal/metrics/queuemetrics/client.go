@@ -1,9 +1,9 @@
 package queuemetrics
 
 import (
+	"bitmagnet-io/bitmagnet/internal/metrics"
+	"bitmagnet-io/bitmagnet/internal/model"
 	"context"
-	"github.com/bitmagnet-io/bitmagnet/internal/metrics"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
 	"gorm.io/gorm"
 	"strings"
 	"time"

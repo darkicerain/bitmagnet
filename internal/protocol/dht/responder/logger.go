@@ -1,8 +1,8 @@
 package responder
 
 import (
+	"bitmagnet-io/bitmagnet/internal/protocol/dht"
 	"context"
-	"github.com/bitmagnet-io/bitmagnet/internal/protocol/dht"
 	"go.uber.org/zap"
 	"time"
 )

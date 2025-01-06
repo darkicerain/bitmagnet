@@ -1,10 +1,10 @@
 package migrations
 
 import (
+	"bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
+	migrationssql "bitmagnet-io/bitmagnet/migrations"
 	"context"
 	"database/sql"
-	"github.com/bitmagnet-io/bitmagnet/internal/boilerplate/lazy"
-	migrationssql "github.com/bitmagnet-io/bitmagnet/migrations"
 	goose "github.com/pressly/goose/v3"
 	"go.uber.org/fx"
 	"go.uber.org/zap"

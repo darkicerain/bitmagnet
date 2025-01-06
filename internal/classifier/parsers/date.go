@@ -1,8 +1,8 @@
 package parsers
 
 import (
-	"github.com/bitmagnet-io/bitmagnet/internal/lexer"
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/lexer"
+	"bitmagnet-io/bitmagnet/internal/model"
 	"regexp"
 	"strconv"
 	"strings"

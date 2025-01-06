@@ -16,7 +16,7 @@ import (
 
 	"gorm.io/plugin/dbresolver"
 
-	"github.com/bitmagnet-io/bitmagnet/internal/model"
+	"bitmagnet-io/bitmagnet/internal/model"
 )
 
 func newTorrent(db *gorm.DB, opts ...gen.DOOption) torrent {
@@ -71,6 +71,12 @@ func newTorrent(db *gorm.DB, opts ...gen.DOOption) torrent {
 		RelationField: field.NewRelation("Pieces", "model.TorrentPieces"),
 	}
 
+	_torrent.Binary = torrentHasOneBinary{
+		db: db.Session(&gorm.Session{}),
+
+		RelationField: field.NewRelation("Binary", "model.TorrentTorrentDotFile"),
+	}
+
 	_torrent.Tags = torrentHasManyTags{
 		db: db.Session(&gorm.Session{}),
 
@@ -104,6 +110,8 @@ type torrent struct {
 	Files torrentHasManyFiles
 
 	Pieces torrentHasOnePieces
+
+	Binary torrentHasOneBinary
 
 	Tags torrentHasManyTags
 
@@ -147,7 +155,7 @@ func (t *torrent) GetFieldByName(fieldName string) (field.OrderExpr, bool) {
 }
 
 func (t *torrent) fillFieldMap() {
-	t.fieldMap = make(map[string]field.Expr, 15)
+	t.fieldMap = make(map[string]field.Expr, 16)
 	t.fieldMap["info_hash"] = t.InfoHash
 	t.fieldMap["name"] = t.Name
 	t.fieldMap["size"] = t.Size
@@ -526,6 +534,77 @@ func (a torrentHasOnePiecesTx) Clear() error {
 }
 
 func (a torrentHasOnePiecesTx) Count() int64 {
+	return a.tx.Count()
+}
+
+type torrentHasOneBinary struct {
+	db *gorm.DB
+
+	field.RelationField
+}
+
+func (a torrentHasOneBinary) Where(conds ...field.Expr) *torrentHasOneBinary {
+	if len(conds) == 0 {
+		return &a
+	}
+
+	exprs := make([]clause.Expression, 0, len(conds))
+	for _, cond := range conds {
+		exprs = append(exprs, cond.BeCond().(clause.Expression))
+	}
+	a.db = a.db.Clauses(clause.Where{Exprs: exprs})
+	return &a
+}
+
+func (a torrentHasOneBinary) WithContext(ctx context.Context) *torrentHasOneBinary {
+	a.db = a.db.WithContext(ctx)
+	return &a
+}
+
+func (a torrentHasOneBinary) Session(session *gorm.Session) *torrentHasOneBinary {
+	a.db = a.db.Session(session)
+	return &a
+}
+
+func (a torrentHasOneBinary) Model(m *model.Torrent) *torrentHasOneBinaryTx {
+	return &torrentHasOneBinaryTx{a.db.Model(m).Association(a.Name())}
+}
+
+type torrentHasOneBinaryTx struct{ tx *gorm.Association }
+
+func (a torrentHasOneBinaryTx) Find() (result *model.TorrentTorrentDotFile, err error) {
+	return result, a.tx.Find(&result)
+}
+
+func (a torrentHasOneBinaryTx) Append(values ...*model.TorrentTorrentDotFile) (err error) {
+	targetValues := make([]interface{}, len(values))
+	for i, v := range values {
+		targetValues[i] = v
+	}
+	return a.tx.Append(targetValues...)
+}
+
+func (a torrentHasOneBinaryTx) Replace(values ...*model.TorrentTorrentDotFile) (err error) {
+	targetValues := make([]interface{}, len(values))
+	for i, v := range values {
+		targetValues[i] = v
+	}
+	return a.tx.Replace(targetValues...)
+}
+
+func (a torrentHasOneBinaryTx) Delete(values ...*model.TorrentTorrentDotFile) (err error) {
+	targetValues := make([]interface{}, len(values))
+	for i, v := range values {
+		targetValues[i] = v
+	}
+	return a.tx.Delete(targetValues...)
+}
+
+func (a torrentHasOneBinaryTx) Clear() error {
+	return a.tx.Clear()
+}
+
+func (a torrentHasOneBinaryTx) Count() int64 {
 	return a.tx.Count()
 }
 
